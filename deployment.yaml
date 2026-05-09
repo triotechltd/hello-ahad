@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-ahad-deployment
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: hello-ahad
+
+  template:
+    metadata:
+      labels:
+        app: hello-ahad
+
+    spec:
+      containers:
+      - name: hello-ahad-container
+        image: triotechltd/hello-ahad:v1
+
+        ports:
+        - containerPort: 80
