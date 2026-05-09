@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hello-ahad-container
-        image: triotechltd/hello-ahad:v1
+        image: triotechltd/hello-ahad:v2
 
         ports:
         - containerPort: 80
